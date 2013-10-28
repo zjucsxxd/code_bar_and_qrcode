@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A94D5C001817FC98007B6ADB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94D5BFF1817FC98007B6ADB /* Foundation.framework */; };
+		A94D5C021817FC98007B6ADB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94D5C011817FC98007B6ADB /* CoreGraphics.framework */; };
+		A94D5C041817FC98007B6ADB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94D5C031817FC98007B6ADB /* UIKit.framework */; };
+		A94D5C0A1817FC98007B6ADB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A94D5C081817FC98007B6ADB /* InfoPlist.strings */; };
+		A94D5C0C1817FC98007B6ADB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A94D5C0B1817FC98007B6ADB /* main.m */; };
+		A94D5C101817FC99007B6ADB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A94D5C0F1817FC99007B6ADB /* AppDelegate.m */; };
+		A94D5C131817FC99007B6ADB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94D5C111817FC99007B6ADB /* Main.storyboard */; };
+		A94D5C161817FC99007B6ADB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A94D5C151817FC99007B6ADB /* ViewController.m */; };
+		A94D5C181817FC99007B6ADB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94D5C171817FC99007B6ADB /* Images.xcassets */; };
+		A94D5C1F1817FC99007B6ADB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94D5C1E1817FC99007B6ADB /* XCTest.framework */; };
+		A94D5C201817FC99007B6ADB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94D5BFF1817FC98007B6ADB /* Foundation.framework */; };
+		A94D5C211817FC99007B6ADB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94D5C031817FC98007B6ADB /* UIKit.framework */; };
+		A94D5C291817FC99007B6ADB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A94D5C271817FC99007B6ADB /* InfoPlist.strings */; };
+		A94D5C2B1817FC99007B6ADB /* TestCodeBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A94D5C2A1817FC99007B6ADB /* TestCodeBarTests.m */; };
+		A94D5C531817FCE5007B6ADB /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A94D5C4D1817FCE5007B6ADB /* libzbar.a */; };
+		A94D5C541817FCE5007B6ADB /* zbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = A94D5C4F1817FCE5007B6ADB /* zbar-back.png */; };
+		A94D5C551817FCE5007B6ADB /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = A94D5C501817FCE5007B6ADB /* zbar-help.html */; };
+		A94D5C561817FCE5007B6ADB /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = A94D5C511817FCE5007B6ADB /* zbar-helpicons.png */; };
+		A94D5C571817FCE5007B6ADB /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = A94D5C521817FCE5007B6ADB /* zbar-samples.png */; };
+		A94D5C5C1817FE7A007B6ADB /* CapturaCodigoBarraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A94D5C5A1817FE7A007B6ADB /* CapturaCodigoBarraViewController.m */; };
+		A94D5C5D1817FE7A007B6ADB /* CapturaCodigoBarraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94D5C5B1817FE7A007B6ADB /* CapturaCodigoBarraViewController.xib */; };
+		A94D5C82181802D8007B6ADB /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = A94D5C65181802D8007B6ADB /* close.png */; };
+		A94D5C87181802D8007B6ADB /* icon-check.png in Resources */ = {isa = PBXBuildFile; fileRef = A94D5C6A181802D8007B6ADB /* icon-check.png */; };
+		A94D5C88181802D8007B6ADB /* icon_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = A94D5C6B181802D8007B6ADB /* icon_camera.png */; };
+		A94D5C9A18180721007B6ADB /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A94D5C9918180721007B6ADB /* libiconv.dylib */; };
+		A94D5C9C18180DA6007B6ADB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94D5C9B18180DA6007B6ADB /* QuartzCore.framework */; };
+		A94D5C9E18180EE0007B6ADB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94D5C9D18180EE0007B6ADB /* AVFoundation.framework */; };
+		A94D5CA018180F50007B6ADB /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94D5C9F18180F50007B6ADB /* CoreMedia.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A94D5C221817FC99007B6ADB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A94D5BF41817FC98007B6ADB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A94D5BFB1817FC98007B6ADB;
+			remoteInfo = TestCodeBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A94D5BFC1817FC98007B6ADB /* TestCodeBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCodeBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A94D5BFF1817FC98007B6ADB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A94D5C011817FC98007B6ADB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A94D5C031817FC98007B6ADB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A94D5C071817FC98007B6ADB /* TestCodeBar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestCodeBar-Info.plist"; sourceTree = "<group>"; };
+		A94D5C091817FC98007B6ADB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A94D5C0B1817FC98007B6ADB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A94D5C0D1817FC98007B6ADB /* TestCodeBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestCodeBar-Prefix.pch"; sourceTree = "<group>"; };
+		A94D5C0E1817FC98007B6ADB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A94D5C0F1817FC99007B6ADB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A94D5C121817FC99007B6ADB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A94D5C141817FC99007B6ADB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A94D5C151817FC99007B6ADB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A94D5C171817FC99007B6ADB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A94D5C1D1817FC99007B6ADB /* TestCodeBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCodeBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A94D5C1E1817FC99007B6ADB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A94D5C261817FC99007B6ADB /* TestCodeBarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestCodeBarTests-Info.plist"; sourceTree = "<group>"; };
+		A94D5C281817FC99007B6ADB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A94D5C2A1817FC99007B6ADB /* TestCodeBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCodeBarTests.m; sourceTree = "<group>"; };
+		A94D5C391817FCE5007B6ADB /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		A94D5C3A1817FCE5007B6ADB /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		A94D5C3B1817FCE5007B6ADB /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		A94D5C3C1817FCE5007B6ADB /* ImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScanner.h; sourceTree = "<group>"; };
+		A94D5C3D1817FCE5007B6ADB /* Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
+		A94D5C3E1817FCE5007B6ADB /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		A94D5C3F1817FCE5007B6ADB /* Symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbol.h; sourceTree = "<group>"; };
+		A94D5C401817FCE5007B6ADB /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		A94D5C411817FCE5007B6ADB /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		A94D5C421817FCE5007B6ADB /* zbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zbar.h; sourceTree = "<group>"; };
+		A94D5C431817FCE5007B6ADB /* ZBarCameraSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCameraSimulator.h; sourceTree = "<group>"; };
+		A94D5C441817FCE5007B6ADB /* ZBarCaptureReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCaptureReader.h; sourceTree = "<group>"; };
+		A94D5C451817FCE5007B6ADB /* ZBarHelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarHelpController.h; sourceTree = "<group>"; };
+		A94D5C461817FCE5007B6ADB /* ZBarImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImage.h; sourceTree = "<group>"; };
+		A94D5C471817FCE5007B6ADB /* ZBarImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImageScanner.h; sourceTree = "<group>"; };
+		A94D5C481817FCE5007B6ADB /* ZBarReaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderController.h; sourceTree = "<group>"; };
+		A94D5C491817FCE5007B6ADB /* ZBarReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderView.h; sourceTree = "<group>"; };
+		A94D5C4A1817FCE5007B6ADB /* ZBarReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderViewController.h; sourceTree = "<group>"; };
+		A94D5C4B1817FCE5007B6ADB /* ZBarSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSDK.h; sourceTree = "<group>"; };
+		A94D5C4C1817FCE5007B6ADB /* ZBarSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSymbol.h; sourceTree = "<group>"; };
+		A94D5C4D1817FCE5007B6ADB /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
+		A94D5C4F1817FCE5007B6ADB /* zbar-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-back.png"; sourceTree = "<group>"; };
+		A94D5C501817FCE5007B6ADB /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
+		A94D5C511817FCE5007B6ADB /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
+		A94D5C521817FCE5007B6ADB /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
+		A94D5C591817FE7A007B6ADB /* CapturaCodigoBarraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapturaCodigoBarraViewController.h; sourceTree = "<group>"; };
+		A94D5C5A1817FE7A007B6ADB /* CapturaCodigoBarraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapturaCodigoBarraViewController.m; sourceTree = "<group>"; };
+		A94D5C5B1817FE7A007B6ADB /* CapturaCodigoBarraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CapturaCodigoBarraViewController.xib; sourceTree = "<group>"; };
+		A94D5C65181802D8007B6ADB /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		A94D5C6A181802D8007B6ADB /* icon-check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-check.png"; sourceTree = "<group>"; };
+		A94D5C6B181802D8007B6ADB /* icon_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_camera.png; sourceTree = "<group>"; };
+		A94D5C9918180721007B6ADB /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		A94D5C9B18180DA6007B6ADB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A94D5C9D18180EE0007B6ADB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A94D5C9F18180F50007B6ADB /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A94D5BF91817FC98007B6ADB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94D5CA018180F50007B6ADB /* CoreMedia.framework in Frameworks */,
+				A94D5C9E18180EE0007B6ADB /* AVFoundation.framework in Frameworks */,
+				A94D5C9C18180DA6007B6ADB /* QuartzCore.framework in Frameworks */,
+				A94D5C9A18180721007B6ADB /* libiconv.dylib in Frameworks */,
+				A94D5C531817FCE5007B6ADB /* libzbar.a in Frameworks */,
+				A94D5C021817FC98007B6ADB /* CoreGraphics.framework in Frameworks */,
+				A94D5C041817FC98007B6ADB /* UIKit.framework in Frameworks */,
+				A94D5C001817FC98007B6ADB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94D5C1A1817FC99007B6ADB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94D5C1F1817FC99007B6ADB /* XCTest.framework in Frameworks */,
+				A94D5C211817FC99007B6ADB /* UIKit.framework in Frameworks */,
+				A94D5C201817FC99007B6ADB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A94D5BF31817FC98007B6ADB = {
+			isa = PBXGroup;
+			children = (
+				A94D5C051817FC98007B6ADB /* TestCodeBar */,
+				A94D5C241817FC99007B6ADB /* TestCodeBarTests */,
+				A94D5BFE1817FC98007B6ADB /* Frameworks */,
+				A94D5BFD1817FC98007B6ADB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A94D5BFD1817FC98007B6ADB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A94D5BFC1817FC98007B6ADB /* TestCodeBar.app */,
+				A94D5C1D1817FC99007B6ADB /* TestCodeBarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A94D5BFE1817FC98007B6ADB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A94D5C9F18180F50007B6ADB /* CoreMedia.framework */,
+				A94D5C9D18180EE0007B6ADB /* AVFoundation.framework */,
+				A94D5C9B18180DA6007B6ADB /* QuartzCore.framework */,
+				A94D5C9918180721007B6ADB /* libiconv.dylib */,
+				A94D5BFF1817FC98007B6ADB /* Foundation.framework */,
+				A94D5C011817FC98007B6ADB /* CoreGraphics.framework */,
+				A94D5C031817FC98007B6ADB /* UIKit.framework */,
+				A94D5C1E1817FC99007B6ADB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A94D5C051817FC98007B6ADB /* TestCodeBar */ = {
+			isa = PBXGroup;
+			children = (
+				A94D5C5E181802D8007B6ADB /* imagens */,
+				A94D5C581817FDC8007B6ADB /* View */,
+				A94D5C341817FCA9007B6ADB /* Frame */,
+				A94D5C0E1817FC98007B6ADB /* AppDelegate.h */,
+				A94D5C0F1817FC99007B6ADB /* AppDelegate.m */,
+				A94D5C111817FC99007B6ADB /* Main.storyboard */,
+				A94D5C141817FC99007B6ADB /* ViewController.h */,
+				A94D5C151817FC99007B6ADB /* ViewController.m */,
+				A94D5C171817FC99007B6ADB /* Images.xcassets */,
+				A94D5C061817FC98007B6ADB /* Supporting Files */,
+			);
+			path = TestCodeBar;
+			sourceTree = "<group>";
+		};
+		A94D5C061817FC98007B6ADB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A94D5C071817FC98007B6ADB /* TestCodeBar-Info.plist */,
+				A94D5C081817FC98007B6ADB /* InfoPlist.strings */,
+				A94D5C0B1817FC98007B6ADB /* main.m */,
+				A94D5C0D1817FC98007B6ADB /* TestCodeBar-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A94D5C241817FC99007B6ADB /* TestCodeBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				A94D5C2A1817FC99007B6ADB /* TestCodeBarTests.m */,
+				A94D5C251817FC99007B6ADB /* Supporting Files */,
+			);
+			path = TestCodeBarTests;
+			sourceTree = "<group>";
+		};
+		A94D5C251817FC99007B6ADB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A94D5C261817FC99007B6ADB /* TestCodeBarTests-Info.plist */,
+				A94D5C271817FC99007B6ADB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A94D5C341817FCA9007B6ADB /* Frame */ = {
+			isa = PBXGroup;
+			children = (
+				A94D5C351817FCE5007B6ADB /* ZBarSDK */,
+			);
+			path = Frame;
+			sourceTree = "<group>";
+		};
+		A94D5C351817FCE5007B6ADB /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A94D5C361817FCE5007B6ADB /* Headers */,
+				A94D5C4D1817FCE5007B6ADB /* libzbar.a */,
+				A94D5C4E1817FCE5007B6ADB /* Resources */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		A94D5C361817FCE5007B6ADB /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				A94D5C371817FCE5007B6ADB /* ZBarSDK */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		A94D5C371817FCE5007B6ADB /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A94D5C381817FCE5007B6ADB /* zbar */,
+				A94D5C421817FCE5007B6ADB /* zbar.h */,
+				A94D5C431817FCE5007B6ADB /* ZBarCameraSimulator.h */,
+				A94D5C441817FCE5007B6ADB /* ZBarCaptureReader.h */,
+				A94D5C451817FCE5007B6ADB /* ZBarHelpController.h */,
+				A94D5C461817FCE5007B6ADB /* ZBarImage.h */,
+				A94D5C471817FCE5007B6ADB /* ZBarImageScanner.h */,
+				A94D5C481817FCE5007B6ADB /* ZBarReaderController.h */,
+				A94D5C491817FCE5007B6ADB /* ZBarReaderView.h */,
+				A94D5C4A1817FCE5007B6ADB /* ZBarReaderViewController.h */,
+				A94D5C4B1817FCE5007B6ADB /* ZBarSDK.h */,
+				A94D5C4C1817FCE5007B6ADB /* ZBarSymbol.h */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		A94D5C381817FCE5007B6ADB /* zbar */ = {
+			isa = PBXGroup;
+			children = (
+				A94D5C391817FCE5007B6ADB /* Decoder.h */,
+				A94D5C3A1817FCE5007B6ADB /* Exception.h */,
+				A94D5C3B1817FCE5007B6ADB /* Image.h */,
+				A94D5C3C1817FCE5007B6ADB /* ImageScanner.h */,
+				A94D5C3D1817FCE5007B6ADB /* Processor.h */,
+				A94D5C3E1817FCE5007B6ADB /* Scanner.h */,
+				A94D5C3F1817FCE5007B6ADB /* Symbol.h */,
+				A94D5C401817FCE5007B6ADB /* Video.h */,
+				A94D5C411817FCE5007B6ADB /* Window.h */,
+			);
+			path = zbar;
+			sourceTree = "<group>";
+		};
+		A94D5C4E1817FCE5007B6ADB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A94D5C4F1817FCE5007B6ADB /* zbar-back.png */,
+				A94D5C501817FCE5007B6ADB /* zbar-help.html */,
+				A94D5C511817FCE5007B6ADB /* zbar-helpicons.png */,
+				A94D5C521817FCE5007B6ADB /* zbar-samples.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A94D5C581817FDC8007B6ADB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A94D5C591817FE7A007B6ADB /* CapturaCodigoBarraViewController.h */,
+				A94D5C5A1817FE7A007B6ADB /* CapturaCodigoBarraViewController.m */,
+				A94D5C5B1817FE7A007B6ADB /* CapturaCodigoBarraViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A94D5C5E181802D8007B6ADB /* imagens */ = {
+			isa = PBXGroup;
+			children = (
+				A94D5C65181802D8007B6ADB /* close.png */,
+				A94D5C6A181802D8007B6ADB /* icon-check.png */,
+				A94D5C6B181802D8007B6ADB /* icon_camera.png */,
+			);
+			path = imagens;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A94D5BFB1817FC98007B6ADB /* TestCodeBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A94D5C2E1817FC99007B6ADB /* Build configuration list for PBXNativeTarget "TestCodeBar" */;
+			buildPhases = (
+				A94D5BF81817FC98007B6ADB /* Sources */,
+				A94D5BF91817FC98007B6ADB /* Frameworks */,
+				A94D5BFA1817FC98007B6ADB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestCodeBar;
+			productName = TestCodeBar;
+			productReference = A94D5BFC1817FC98007B6ADB /* TestCodeBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A94D5C1C1817FC99007B6ADB /* TestCodeBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A94D5C311817FC99007B6ADB /* Build configuration list for PBXNativeTarget "TestCodeBarTests" */;
+			buildPhases = (
+				A94D5C191817FC99007B6ADB /* Sources */,
+				A94D5C1A1817FC99007B6ADB /* Frameworks */,
+				A94D5C1B1817FC99007B6ADB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A94D5C231817FC99007B6ADB /* PBXTargetDependency */,
+			);
+			name = TestCodeBarTests;
+			productName = TestCodeBarTests;
+			productReference = A94D5C1D1817FC99007B6ADB /* TestCodeBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A94D5BF41817FC98007B6ADB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Márcio Habigzang Brufatto";
+				TargetAttributes = {
+					A94D5BFB1817FC98007B6ADB = {
+						DevelopmentTeam = NK57AC4EC3;
+					};
+					A94D5C1C1817FC99007B6ADB = {
+						TestTargetID = A94D5BFB1817FC98007B6ADB;
+					};
+				};
+			};
+			buildConfigurationList = A94D5BF71817FC98007B6ADB /* Build configuration list for PBXProject "TestCodeBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A94D5BF31817FC98007B6ADB;
+			productRefGroup = A94D5BFD1817FC98007B6ADB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A94D5BFB1817FC98007B6ADB /* TestCodeBar */,
+				A94D5C1C1817FC99007B6ADB /* TestCodeBarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A94D5BFA1817FC98007B6ADB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94D5C181817FC99007B6ADB /* Images.xcassets in Resources */,
+				A94D5C82181802D8007B6ADB /* close.png in Resources */,
+				A94D5C88181802D8007B6ADB /* icon_camera.png in Resources */,
+				A94D5C5D1817FE7A007B6ADB /* CapturaCodigoBarraViewController.xib in Resources */,
+				A94D5C551817FCE5007B6ADB /* zbar-help.html in Resources */,
+				A94D5C571817FCE5007B6ADB /* zbar-samples.png in Resources */,
+				A94D5C561817FCE5007B6ADB /* zbar-helpicons.png in Resources */,
+				A94D5C87181802D8007B6ADB /* icon-check.png in Resources */,
+				A94D5C541817FCE5007B6ADB /* zbar-back.png in Resources */,
+				A94D5C0A1817FC98007B6ADB /* InfoPlist.strings in Resources */,
+				A94D5C131817FC99007B6ADB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94D5C1B1817FC99007B6ADB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94D5C291817FC99007B6ADB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A94D5BF81817FC98007B6ADB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94D5C161817FC99007B6ADB /* ViewController.m in Sources */,
+				A94D5C5C1817FE7A007B6ADB /* CapturaCodigoBarraViewController.m in Sources */,
+				A94D5C101817FC99007B6ADB /* AppDelegate.m in Sources */,
+				A94D5C0C1817FC98007B6ADB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94D5C191817FC99007B6ADB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94D5C2B1817FC99007B6ADB /* TestCodeBarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A94D5C231817FC99007B6ADB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A94D5BFB1817FC98007B6ADB /* TestCodeBar */;
+			targetProxy = A94D5C221817FC99007B6ADB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A94D5C081817FC98007B6ADB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A94D5C091817FC98007B6ADB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A94D5C111817FC99007B6ADB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A94D5C121817FC99007B6ADB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A94D5C271817FC99007B6ADB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A94D5C281817FC99007B6ADB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A94D5C2C1817FC99007B6ADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A94D5C2D1817FC99007B6ADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A94D5C2F1817FC99007B6ADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestCodeBar/TestCodeBar-Prefix.pch";
+				INFOPLIST_FILE = "TestCodeBar/TestCodeBar-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/madhava/Dropbox/projetos/iOS/TestCodeBar/TestCodeBar/Frame/ZBarSDK,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A94D5C301817FC99007B6ADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestCodeBar/TestCodeBar-Prefix.pch";
+				INFOPLIST_FILE = "TestCodeBar/TestCodeBar-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/madhava/Dropbox/projetos/iOS/TestCodeBar/TestCodeBar/Frame/ZBarSDK,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A94D5C321817FC99007B6ADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestCodeBar.app/TestCodeBar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestCodeBar/TestCodeBar-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TestCodeBarTests/TestCodeBarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A94D5C331817FC99007B6ADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestCodeBar.app/TestCodeBar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestCodeBar/TestCodeBar-Prefix.pch";
+				INFOPLIST_FILE = "TestCodeBarTests/TestCodeBarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A94D5BF71817FC98007B6ADB /* Build configuration list for PBXProject "TestCodeBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A94D5C2C1817FC99007B6ADB /* Debug */,
+				A94D5C2D1817FC99007B6ADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A94D5C2E1817FC99007B6ADB /* Build configuration list for PBXNativeTarget "TestCodeBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A94D5C2F1817FC99007B6ADB /* Debug */,
+				A94D5C301817FC99007B6ADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A94D5C311817FC99007B6ADB /* Build configuration list for PBXNativeTarget "TestCodeBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A94D5C321817FC99007B6ADB /* Debug */,
+				A94D5C331817FC99007B6ADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A94D5BF41817FC98007B6ADB /* Project object */;
+}
